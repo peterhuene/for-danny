@@ -1,0 +1,14 @@
+package demo:bar;
+
+interface foo {
+    bar: func() -> string;
+}
+
+world a {
+    export foo;
+}
+
+world b {
+    import foo;
+    export foo;
+}
